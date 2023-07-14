@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  db:
+    image: postgres:15
+    volumes:
+      - postgres_data:/var/lib/postgresql/data5/
+    ports:
+      - 5441:5432
+    env_file:
+      - ../backend/.env
+
+volumes:
+  postgres_data:
