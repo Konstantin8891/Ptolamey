@@ -30,6 +30,26 @@ cd ..
 
 cd backend
 
+touch .env 
+
+Содержимое env файла:
+
+SECRET_KEY=django-insecure-g^5on#2t!v+hqry4_wgylises8jr%j#yn=)6%ywc3nwsat#b^=
+
+ALGORITHM=HS256
+
+DB_ENGINE=django.db.backends.postgresql 
+
+DB_NAME=postgres 
+
+POSTGRES_USER=postgres 
+
+POSTGRES_PASSWORD=postgres 
+
+DB_HOST=localhost 
+
+DB_PORT=5441
+
 python manage.py migrate
 
 python manage.py createsuperuser
