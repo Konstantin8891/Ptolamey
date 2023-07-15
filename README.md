@@ -35,3 +35,7 @@ python manage.py migrate
 python manage.py createsuperuser
 
 python manage.py runserver
+
+Документация доступна по адресу:
+
+http://localhost:8000/docs/
